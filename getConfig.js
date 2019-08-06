@@ -1,6 +1,11 @@
 module.exports = {
   getConfig: function(useReact) {
-    const plugins = ["@typescript-eslint", "prettier", "simple-import-sort"];
+    const plugins = [
+      "@typescript-eslint",
+      "prettier",
+      "simple-import-sort",
+      "import"
+    ];
     if (useReact) {
       plugins.push("react");
     }
