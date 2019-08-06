@@ -1,6 +1,6 @@
 module.exports = {
   getConfig: function(useReact) {
-    const plugins = ["@typescript-eslint", "prettier"];
+    const plugins = ["@typescript-eslint", "prettier", "simple-import-sort"];
     if (useReact) {
       plugins.push("react");
     }
@@ -9,7 +9,8 @@ module.exports = {
       "plugin:@typescript-eslint/recommended",
       "prettier",
       "prettier/@typescript-eslint",
-      "eslint:recommended"
+      "eslint:recommended",
+      "plugin:promise/recommended"
     ];
     if (useReact) {
       extendsList.push("plugin:react/recommended");
@@ -34,6 +35,19 @@ module.exports = {
     const rules = {
       "prettier/prettier": "error",
       "no-var": "error",
+      "object-shorthand": "error",
+      "no-extra-bind": "error",
+      "no-extra-label": "error",
+      "eol-last": "error",
+      "prefer-const": "error",
+      "prefer-destructuring": [
+        "error",
+        {
+          array: false,
+          object: true
+        }
+      ],
+      "simple-import-sort/sort": "error",
       "@typescript-eslint/no-empty-interface": "off",
       camelcase: "off",
       "@typescript-eslint/camelcase": [
