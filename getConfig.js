@@ -81,7 +81,10 @@ module.exports = {
       "@typescript-eslint/explicit-member-accessibility": 0,
       "@typescript-eslint/explicit-function-return-type": 0,
       "@typescript-eslint/no-useless-constructor": "error",
-      "@typescript-eslint/no-for-in-array": "error"
+      "@typescript-eslint/no-for-in-array": "error",
+      "import/first": "error",
+      "import/newline-after-import": "error",
+      "import/no-duplicates": "error"
     };
 
     if (useReact) {
