@@ -4,7 +4,8 @@ module.exports = {
       "@typescript-eslint",
       "prettier",
       "simple-import-sort",
-      "import"
+      "import",
+      "lodash"
     ];
     if (useReact) {
       plugins.push("react");
@@ -15,7 +16,8 @@ module.exports = {
       "prettier",
       "prettier/@typescript-eslint",
       "eslint:recommended",
-      "plugin:promise/recommended"
+      "plugin:promise/recommended",
+      "plugin:lodash/recommended"
     ];
     if (useReact) {
       extendsList.push("plugin:react/recommended");
@@ -89,7 +91,15 @@ module.exports = {
       "@typescript-eslint/no-for-in-array": "error",
       "import/first": "error",
       "import/newline-after-import": "error",
-      "import/no-duplicates": "error"
+      "import/no-duplicates": "error",
+      "lodash/import-scope": "off",
+      "lodash/prefer-constant": "off",
+      "lodash/prefer-lodash-method": [
+        "warn",
+        {
+          ignoreMethods: ["toLower"]
+        }
+      ]
     };
 
     if (useReact) {
