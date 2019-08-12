@@ -99,7 +99,12 @@ module.exports = {
         {
           ignoreMethods: ["toLower"]
         }
-      ]
+      ],
+      "lodash/prefer-reject": "off",
+      "lodash/prop-shorthand": "off",
+      "lodash/chain-style": "off",
+      "lodash/chaining": "off",
+      "lodash/prefer-find": "off"
     };
 
     if (useReact) {
