@@ -104,7 +104,9 @@ module.exports = {
       "lodash/prop-shorthand": "off",
       "lodash/chain-style": "off",
       "lodash/chaining": "off",
-      "lodash/prefer-find": "off"
+      "lodash/prefer-find": "off",
+      "lodash/prefer-invoke-map": "off",
+      "lodash/prefer-filter": "off"
     };
 
     if (useReact) {
