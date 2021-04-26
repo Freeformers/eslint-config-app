@@ -54,7 +54,7 @@ module.exports = {
           object: true
         }
       ],
-      "simple-import-sort/sort": "error",
+      "simple-import-sort/import": "error",
       "@typescript-eslint/no-empty-interface": "off",
       camelcase: "off",
       "@typescript-eslint/camelcase": [
