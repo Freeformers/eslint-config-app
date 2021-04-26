@@ -1,9 +1,9 @@
 {
-  "name": "@freeformers/eslint-config-app",
+  "name": "@teamtogether/eslint-config-app",
   "version": "1.0.9",
   "description": "ESLint shared config for Freeformers",
   "main": "index.js",
-  "author": "shauns <https://github.com/shauns>",
+  "author": "a_j_wilkinson https://github.com/ajwilkinson",
   "license": "MIT",
   "peerDependencies": {
     "eslint": ">=5.13.0",
