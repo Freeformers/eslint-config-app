@@ -1,6 +1,6 @@
 {
   "name": "@teamtogether/eslint-config-app",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "ESLint shared config for Freeformers",
   "main": "index.js",
   "author": "a_j_wilkinson https://github.com/ajwilkinson",
